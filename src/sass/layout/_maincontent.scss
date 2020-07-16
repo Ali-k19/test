@@ -1,0 +1,46 @@
+.main-email {
+    float: right;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: #fff;
+    margin-top: .5%;
+    margin-right: 2%;
+    letter-spacing: 4px;
+    color: rgba(255, 215, 0, 0.8);
+}
+
+.main-title {
+    position: absolute;
+    color: #fff;
+    font-size: 100px;
+    left: 20%;
+    top: 40%;
+    transform: translateY(-50%);
+    font-family: 'Basic', sans-serif;
+}
+
+.main-img {
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    transform: translateX(-80%) translateY(-50%);
+}
+
+.main-desc {
+    color: #fff;
+    font-family: 'Basic', sans-serif;
+    font-style: italic;
+}
+
+.main-desc__line {
+    position: absolute;
+    top: 66%;
+    left: 20%;
+}
+
+.main-desc__text {
+    position: absolute;
+    top: 66.7%;
+    left: 26%;
+}

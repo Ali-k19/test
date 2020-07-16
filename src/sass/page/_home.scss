@@ -1,0 +1,21 @@
+.header{
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, $gradiant-color-1 , $gradiant-color-2);
+}
+
+.about-me {
+    background-image: linear-gradient(to right bottom, 
+    #F8F8F8, #F5F5F5);
+    transform: skewY(-3deg);
+    margin-top: -5vh;
+    z-index: 1px;
+
+    & > * {
+        transform: skewY(3deg);
+    }
+}
+
+.my-work {
+    background-image: linear-gradient(to right bottom, $gradiant-color-1 , $gradiant-color-2);
+    margin-top: -6vh;
+}

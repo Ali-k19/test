@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//variables
+$side-bar-color: #353434;
+$gradiant-color-1: #202020;
+$gradiant-color-2: #080808;
+$side-bar-elements-color: #787878;
+
+//page
+@import './page/home';
+
+//layout
+@import './layout/sidebar';
+@import './layout/maincontent';
+@import './layout/about';
+@import './layout/grid';
+@import './layout/mywork';
+
+//base
+@import './base/animations';

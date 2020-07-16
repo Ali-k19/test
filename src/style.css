@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Basic&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, #202020, #080808); }
+
+.about-me {
+  background-image: linear-gradient(to right bottom, #F8F8F8, #F5F5F5);
+  transform: skewY(-3deg);
+  margin-top: -5vh;
+  z-index: 1px; }
+  .about-me > * {
+    transform: skewY(3deg); }
+
+.my-work {
+  background-image: linear-gradient(to right bottom, #202020, #080808);
+  margin-top: -6vh; }
+
+.side-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  background-color: #353434;
+  width: 100px;
+  z-index: 1000; }
+
+ion-icon {
+  font-size: 32px; }
+
+.side-bar-name {
+  position: absolute;
+  color: #787878;
+  display: block;
+  left: 50%;
+  transform: translate(-50%) rotate(270deg); }
+
+.side-bar-letter-1 {
+  top: 70px;
+  animation: side-bar-name .2s ease-in 1.5s;
+  animation-fill-mode: backwards; }
+
+.side-bar-letter-2 {
+  top: 50px;
+  animation: side-bar-name .2s ease-in;
+  animation-fill-mode: backwards; }
+
+.side-bar-letter-3 {
+  top: 30px;
+  animation: side-bar-name .2s ease-in 1s;
+  animation-fill-mode: backwards; }
+
+.side-bar-letter-4 {
+  top: 10px;
+  animation: side-bar-name .2s ease-in .5s;
+  animation-fill-mode: backwards; }
+
+.side-bar-social-media {
+  position: absolute;
+  color: #787878;
+  left: 50%;
+  transform: translate(-50%) rotate(270deg);
+  letter-spacing: .5px; }
+
+.side-bar-social {
+  top: 49%; }
+
+.side-ber-media {
+  top: 40%; }
+
+.social-media_logos {
+  position: absolute;
+  color: #787878;
+  left: 50%;
+  transform: translate(-50%); }
+
+.instagram-logo {
+  bottom: 180px; }
+
+.twitter-logo {
+  bottom: 120px; }
+
+.facebook-logo {
+  bottom: 60px; }
+
+.instagram-logo:hover, .twitter-logo:hover, .facebook-logo:hover {
+  color: #fff; }
+
+.main-email {
+  float: right;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: #fff;
+  margin-top: .5%;
+  margin-right: 2%;
+  letter-spacing: 4px;
+  color: rgba(255, 215, 0, 0.8); }
+
+.main-title {
+  position: absolute;
+  color: #fff;
+  font-size: 100px;
+  left: 20%;
+  top: 40%;
+  transform: translateY(-50%);
+  font-family: 'Basic', sans-serif; }
+
+.main-img {
+  position: absolute;
+  left: 80%;
+  top: 50%;
+  transform: translateX(-80%) translateY(-50%); }
+
+.main-desc {
+  color: #fff;
+  font-family: 'Basic', sans-serif;
+  font-style: italic; }
+
+.main-desc__line {
+  position: absolute;
+  top: 66%;
+  left: 20%; }
+
+.main-desc__text {
+  position: absolute;
+  top: 66.7%;
+  left: 26%; }
+
+.about-me-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #353434;
+  padding-top: 6px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 10px; }
+
+.about-me-desc {
+  font-family: 'Basic', sans-serif;
+  font-weight: 300;
+  color: #A0A0A0;
+  opacity: .6;
+  text-align: center;
+  margin-bottom: 40px; }
+
+.about-me-main {
+  font-family: 'Basic', sans-serif;
+  font-weight: 300;
+  color: #A0A0A0;
+  opacity: .6;
+  text-align: center; }
+
+.about-me-margin-bottom {
+  height: 30px; }
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 20px; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 60px; }
+  .row .col-1-of-2 {
+    width: calc((100% - 60px) / 2); }
+
+.row-img {
+  max-width: 800px;
+  margin: 0 auto; }
+  .row-img:not(:last-child) {
+    margin-bottom: 15px; }
+  .row-img::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row-img [class^="col-"] {
+    float: left; }
+    .row-img [class^="col-"]:not(:last-child) {
+      margin-right: 30px; }
+  .row-img .col-1-of-2-img {
+    width: calc((100% - 30px) / 2); }
+
+.my-work-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  padding-top: 60px;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 2px; }
+
+.my-work-img {
+  width: 100%; }
+
+.margin-bottom {
+  height: 30px; }
+
+@keyframes side-bar-name {
+  0% {
+    opacity: 0; }
+  95% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
