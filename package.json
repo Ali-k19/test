@@ -9,7 +9,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "compile:sass": "node-sass ./src/sass/main.scss ./src/style.css -w"
+    "compile:sass": "node-sass ./src/sass/main.scss ./src/style.css -w",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
