@@ -33,6 +33,11 @@
   width: 100px;
   z-index: 1000; }
 
+@media (max-width: 1340px) {
+  .side-bar {
+    visibility: hidden;
+    display: none; } }
+
 ion-icon {
   font-size: 32px; }
 
@@ -119,6 +124,10 @@ ion-icon {
   left: 80%;
   top: 50%;
   transform: translateX(-80%) translateY(-50%); }
+
+@media (max-width: 580px) {
+  .main-img {
+    width: 100%; } }
 
 .main-desc {
   color: #fff;
@@ -208,6 +217,143 @@ ion-icon {
 
 .margin-bottom {
   height: 30px; }
+
+.top-bar {
+  visibility: hidden; }
+
+@media (max-width: 1340px) {
+  .top-bar {
+    visibility: visible;
+    position: fixed;
+    font-family: 'Raleway', sans-serif;
+    height: 70px;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #353434;
+    z-index: 1000; }
+  .top-bar-name {
+    position: absolute;
+    color: #787878;
+    left: 1%;
+    top: 50%;
+    transform: translateY(-50%); }
+  .top-bar-letter-1 {
+    left: 10px;
+    animation: side-bar-name .2s ease-in 1.5s;
+    animation-fill-mode: backwards; }
+  .top-bar-letter-2 {
+    left: 30px;
+    animation: side-bar-name .2s ease-in;
+    animation-fill-mode: backwards; }
+  .top-bar-letter-3 {
+    left: 50px;
+    animation: side-bar-name .2s ease-in 1s;
+    animation-fill-mode: backwards; }
+  .top-bar-letter-4 {
+    left: 70px;
+    animation: side-bar-name .2s ease-in .5s;
+    animation-fill-mode: backwards; }
+  .top-bar-social-media {
+    position: absolute;
+    color: #787878;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%); }
+  .top-bar-social-media_logos {
+    position: absolute;
+    color: #787878;
+    top: 50%;
+    transform: translateY(-50%); }
+  .top-bar-instagram-logo {
+    right: 14%; }
+  .top-bar-twitter-logo {
+    right: 9.5%; }
+  .top-bar-facebook-logo {
+    right: 5%; } }
+
+.social-media-list {
+  display: none;
+  visibility: hidden;
+  list-style: none;
+  position: absolute;
+  right: 0;
+  width: 100px;
+  top: 38px; }
+
+@media (max-width: 653px) {
+  .top-bar-social-media_logos {
+    visibility: hidden;
+    display: none; }
+  .top-bar-menubtn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 88%;
+    cursor: pointer; }
+  .top-bar-menubtn__burger {
+    position: absolute;
+    background-color: #787878;
+    height: 4px;
+    width: 30px;
+    border-radius: 100px;
+    transition: all .5s ease-in-out; }
+  .top-bar-menubtn__burger::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    background-color: #787878;
+    transform: translateY(8px);
+    transition: all .5s ease-in-out; }
+  .top-bar-menubtn__burger::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    background-color: #787878;
+    transform: translateY(-8px);
+    transition: all .5s ease-in-out; }
+  .top-bar-menubtn.open .top-bar-menubtn__burger {
+    transform: translateX(-50%);
+    background: transparent; }
+  .top-bar-menubtn.open .top-bar-menubtn__burger::before {
+    transform: rotate(45deg) translate(10px, -10px); }
+  .top-bar-menubtn.open .top-bar-menubtn__burger::after {
+    transform: rotate(-45deg) translate(10px, 10px); }
+  .list {
+    list-style: none; }
+    .list-instagram {
+      background-color: #353434;
+      padding: 5px;
+      border-bottom: 3px solid #282828; }
+    .list-twitter {
+      background-color: #353434;
+      padding: 5px;
+      border-bottom: 3px solid #282828; }
+    .list-facebook {
+      background-color: #353434;
+      padding: 5px;
+      border-bottom: 3px solid #282828; }
+  .social-media-list.visible {
+    visibility: visible;
+    display: list-item; }
+  .list-instagram__inner {
+    color: #787878;
+    text-decoration: none; }
+  .list-twitter__inner {
+    color: #787878;
+    text-decoration: none; }
+  .list-facebook__inner {
+    color: #787878;
+    text-decoration: none; } }
 
 @keyframes side-bar-name {
   0% {

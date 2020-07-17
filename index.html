@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/src/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
@@ -25,25 +25,36 @@
         <div class="main">
             <a href="mailto:hi@eweb.city"><p class="main-email">Mail@eweb.city</p></a>
             <h1 class="main-title">TITLE.</h1>
-            <img src="/img/me.png" alt="ME" class="main-img">
+            <img src="./src/img/me.png" alt="ME" class="main-img">
             <p class="main-desc"> 
                 <span class="main-desc__line">______</span> 
                 <span class="main-desc__text">short description about me.</span></p>
         </div>
 
-        <!-- <div class="top-bar">
+        <div class="top-bar">
             <p class="top-bar-name top-bar-letter-1">N</p>
             <p class="top-bar-name top-bar-letter-2">A</p>
             <p class="top-bar-name top-bar-letter-3">M</p>
             <p class="top-bar-name top-bar-letter-4">E</p>
 
-            <p class="top-bar-social-media top-bar-social">SOCIAL</p>
-            <p class="top-bar-social-media top-ber-media">MEDIA</p>
+            <p class="top-bar-social-media">SOCIAL MEDIA</p>
+
+            <div class="top-bar-menubtn" id="menu-btn">
+                <ul class="list">
+                    <li class="top-bar-menubtn__burger">
+                        <ul class="social-media-list" id="social-media-dropdownlist">
+                            <li class="list-instagram"><a href="" class="list-instagram__inner"><ion-icon name="logo-instagram"></ion-icon> INSTAGRAM</a></li>
+                            <li class="list-twitter"><a href="" class="list-twitter__inner"><ion-icon name="logo-twitter"></ion-icon> TWITTER</a></li>
+                            <li class="list-facebook"><a href="" class="list-facebook__inner"> <ion-icon name="logo-facebook"></ion-icon> FACEBOOK</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
 
             <a href="" class="top-bar-social-media_logos top-bar-instagram-logo"><ion-icon name="logo-instagram"></ion-icon></a>
             <a href="" class="top-bar-social-media_logos top-bar-twitter-logo"><ion-icon name="logo-twitter"></ion-icon></a>
             <a href="" class="top-bar-social-media_logos top-bar-facebook-logo"><ion-icon name="logo-facebook"></ion-icon></a>
-        </div>  -->
+        </div> 
     </div>
 
     <div class="about-me">
@@ -86,26 +97,26 @@
         <h1 class="my-work-title">MY WORK</h1>
         <div class="row-img">
             <div class="col-1-of-2-img">
-                <img class="my-work-img" src="/img/img.png" alt="img">
+                <img class="my-work-img" src="./src/img/img.png" alt="img">
             </div>
             <div class="col-1-of-2-img">
-                <img class="my-work-img" src="/img/img.png" alt="img">
-            </div>
-        </div>
-        <div class="row-img">
-            <div class="col-1-of-2-img">
-                <img class="my-work-img" src="/img/img.png" alt="img">
-            </div>
-            <div class="col-1-of-2-img">
-                <img class="my-work-img" src="/img/img.png" alt="img">
+                <img class="my-work-img" src="./src/img/img.png" alt="img">
             </div>
         </div>
         <div class="row-img">
             <div class="col-1-of-2-img">
-                <img class="my-work-img" src="/img/img.png" alt="img">
+                <img class="my-work-img" src="./src/img/img.png" alt="img">
             </div>
             <div class="col-1-of-2-img">
-                <img class="my-work-img" src="/img/img.png" alt="img">
+                <img class="my-work-img" src="./src/img/img.png" alt="img">
+            </div>
+        </div>
+        <div class="row-img">
+            <div class="col-1-of-2-img">
+                <img class="my-work-img" src="./src/img/img.png" alt="img">
+            </div>
+            <div class="col-1-of-2-img">
+                <img class="my-work-img" src="./src/img/img.png" alt="img">
             </div>
         </div>
         <div class="margin-bottom"></div>
@@ -113,5 +124,6 @@
 
 
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="./src/menubtn.js"></script>
 </body>
 </html>

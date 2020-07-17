@@ -27,6 +27,12 @@
     transform: translateX(-80%) translateY(-50%);
 }
 
+@media (max-width: 580px) {
+    .main-img {
+        width: 100%;
+    }
+}
+
 .main-desc {
     color: #fff;
     font-family: 'Basic', sans-serif;

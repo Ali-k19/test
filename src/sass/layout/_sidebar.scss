@@ -10,28 +10,12 @@
     z-index: 1000;
 }
 
-// .top-bar {
-//     visibility: hidden;
-// }
-
-// @media( max-width:1340px ) {
-//     .side-bar {
-//         visibility: hidden;
-//     }
-
-//     .top-bar {
-//         visibility: visible;
-//         display: inline-block;
-//         position: sticky;
-//         height: 100px;
-//         width: 100%;
-//         top: 0;
-//         right: 0;
-//         left: 0;
-//         background-color: $side-bar-color;
-//         z-index: 1000;
-//     }
-// }
+@media( max-width:1340px ) {
+    .side-bar {
+        visibility: hidden;
+        display: none;
+    }
+}
 
 
 ion-icon {
