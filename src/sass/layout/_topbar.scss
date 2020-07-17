@@ -14,6 +14,11 @@
         background-color: $side-bar-color;
         z-index: 1000;
     }
+    
+    .main-email { 
+        visibility: hidden;
+        display: none;
+    }
 
     .top-bar-name {
         position: absolute;
@@ -87,6 +92,11 @@
 
 @media (max-width:653px) {
     .top-bar-social-media_logos {
+        visibility: hidden;
+        display: none;
+    }
+
+    .main-email { 
         visibility: hidden;
         display: none;
     }

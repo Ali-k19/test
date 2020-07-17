@@ -294,6 +294,9 @@ ion-icon {
     left: 0;
     background-color: #353434;
     z-index: 1000; }
+  .main-email {
+    visibility: hidden;
+    display: none; }
   .top-bar-name {
     position: absolute;
     color: #787878;
@@ -345,6 +348,9 @@ ion-icon {
 
 @media (max-width: 653px) {
   .top-bar-social-media_logos {
+    visibility: hidden;
+    display: none; }
+  .main-email {
     visibility: hidden;
     display: none; }
   .top-bar-menubtn {
