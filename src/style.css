@@ -117,17 +117,14 @@ ion-icon {
   left: 20%;
   top: 40%;
   transform: translateY(-50%);
-  font-family: 'Basic', sans-serif; }
+  font-family: 'Basic', sans-serif;
+  text-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); }
 
 .main-img {
   position: absolute;
   left: 80%;
   top: 50%;
   transform: translateX(-80%) translateY(-50%); }
-
-@media (max-width: 580px) {
-  .main-img {
-    width: 100%; } }
 
 .main-desc {
   color: #fff;
@@ -144,9 +141,40 @@ ion-icon {
   top: 66.7%;
   left: 26%; }
 
+@media (max-width: 580px) {
+  .main-img {
+    width: 100%; } }
+
+@media (max-width: 1047px) {
+  .main-title {
+    font-size: 80px; }
+  .main-desc__line {
+    font-size: 10px; }
+  .main-desc__text {
+    font-size: 10px; } }
+
+@media (max-width: 918px) {
+  .main-title {
+    left: 15%;
+    top: 70%;
+    font-size: 80px; }
+  .main-desc__line {
+    font-size: 10px;
+    left: 15%;
+    top: 75%; }
+  .main-desc__text {
+    font-size: 10px;
+    left: 21%;
+    top: 75.7%; } }
+
+@media (max-width: 689px) {
+  .main-desc__line {
+    visibility: hidden;
+    display: none; } }
+
 .about-me-title {
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   color: #353434;
   padding-top: 6px;
   text-align: center;
@@ -154,22 +182,51 @@ ion-icon {
   margin-bottom: 10px; }
 
 .about-me-desc {
-  font-family: 'Basic', sans-serif;
-  font-weight: 300;
-  color: #A0A0A0;
-  opacity: .6;
+  font-family: 'basic', sans-serif;
+  color: #888888;
+  opacity: .7;
+  font-size: 13px;
   text-align: center;
   margin-bottom: 40px; }
 
 .about-me-main {
-  font-family: 'Basic', sans-serif;
-  font-weight: 300;
-  color: #A0A0A0;
-  opacity: .6;
+  color: #888888;
   text-align: center; }
+
+.about-me-1 {
+  font-family: 'basic', sans-serif;
+  opacity: .9;
+  font-size: 15px;
+  text-align: center; }
+
+.about-me-2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  display: block;
+  text-align: left; }
+
+.about-me-line {
+  width: 95%;
+  height: 15px;
+  background-image: linear-gradient(to right, #787878, #DCDCDC);
+  border-radius: 100px; }
 
 .about-me-margin-bottom {
   height: 30px; }
+
+.about-me-firstletter {
+  color: #000000;
+  font-size: 30px; }
+
+@media (max-width: 506px) {
+  .about-me-title {
+    font-size: 25px; }
+  .about-me-desc {
+    font-size: 13px; }
+  .about-me-1 {
+    font-size: 10px; }
+  .about-me-firstletter {
+    font-size: 15px; } }
 
 .row {
   max-width: 1140px;
@@ -205,18 +262,23 @@ ion-icon {
 
 .my-work-title {
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   color: #ffffff;
   padding-top: 60px;
   margin-bottom: 40px;
   text-align: center;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  width: 100%; }
 
 .my-work-img {
   width: 100%; }
 
 .margin-bottom {
   height: 30px; }
+
+@media (max-width: 506px) {
+  .my-work-title {
+    font-size: 25px; } }
 
 .top-bar {
   visibility: hidden; }
@@ -342,6 +404,9 @@ ion-icon {
       background-color: #353434;
       padding: 5px;
       border-bottom: 3px solid #282828; }
+    .list-email {
+      background-color: #353434;
+      padding: 5px; }
   .social-media-list.visible {
     visibility: visible;
     display: list-item; }
@@ -352,6 +417,9 @@ ion-icon {
     color: #787878;
     text-decoration: none; }
   .list-facebook__inner {
+    color: #787878;
+    text-decoration: none; }
+  .list-email__inner {
     color: #787878;
     text-decoration: none; } }
 

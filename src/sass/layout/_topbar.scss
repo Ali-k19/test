@@ -168,6 +168,11 @@
             padding: 5px;
             border-bottom: 3px solid #282828;
         }
+
+        &-email {
+            background-color: $side-bar-color;
+            padding: 5px;
+        }
     }
 
     .social-media-list.visible {
@@ -186,6 +191,11 @@
     }
 
     .list-facebook__inner {
+        color: $side-bar-elements-color;
+        text-decoration: none;
+    }
+
+    .list-email__inner {
         color: $side-bar-elements-color;
         text-decoration: none;
     }
