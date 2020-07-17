@@ -335,7 +335,9 @@ ion-icon {
   .top-bar-twitter-logo {
     right: 9.5%; }
   .top-bar-facebook-logo {
-    right: 5%; } }
+    right: 5%; }
+  .top-bar-email-logo {
+    right: 18.5%; } }
 
 .social-media-list {
   display: none;
